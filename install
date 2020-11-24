@@ -28,6 +28,7 @@ cp * $TARGET_DIR
 mkdir -p $HOME/.local/bin
 cp proxyman $HOME/.local/bin
 chmod +x $HOME/.local/bin/proxyman
+export PATH=$PATH:$HOME/.local/bin
 
 which proxyman &> /dev/null
 if [ "$?" != 0 ]; then
